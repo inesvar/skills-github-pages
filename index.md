@@ -2,18 +2,10 @@
 title: Welcome to my blog!
 ---
 
-# Title 1
+Posts categories:
 
-Paragraph
+- 32-bit-math-surprises
 
-## Title 2
+> A collection of situations where well-known math formulas fail for 32-bit integers.
 
-- list
-
-- list
-
-### Title 3
-
-1. list
-
-2. list
+These short articles will point out a problem and propose a solution. This is fun if you like to solve weird edge cases.
