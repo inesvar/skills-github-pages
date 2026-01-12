@@ -1,6 +1,6 @@
 ---
 title: "Invalid array element access in C++ and in Rust"
-date: 20256-01-12
+date: 2026-01-12
 category: cpp-vs-rust
 tags: rust, cpp, gdb
 ---
