@@ -2,7 +2,7 @@
 title: "(Unsigned) Distance For `i32`"
 date: 2025-06-07
 category: 32-bit-math-surprises
-tag: rust
+tags: rust, geometry
 ---
 
 # `fn unsigned_distance(a: i32, b: i32) → u32`
