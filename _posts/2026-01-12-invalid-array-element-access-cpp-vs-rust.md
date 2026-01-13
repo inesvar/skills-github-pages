@@ -7,7 +7,7 @@ tags: rust, cpp, gdb
 
 ## Invalid Array Element Access in Rust
 
-Let's quote the Rust Book Section 3.2, "Invalid Array Element Access" : https://doc.rust-lang.org/stable/book/ch03-02-data-types.html?highlight=Index%20entered#invalid-array-element-access.
+Let's quote the Rust Book Section 3.2, "Invalid Array Element Access" : [https://doc.rust-lang.org/stable/book/ch03-02-data-types.html?highlight=Index%20entered#invalid-array-element-access](https://doc.rust-lang.org/stable/book/ch03-02-data-types.html?highlight=Index%20entered#invalid-array-element-access).
 
 > Let’s see what happens if you try to access an element of an array that is past the end of the array. Say you run this code, similar to the guessing game in Chapter 2, to get an array index from the user:
 > 
@@ -37,7 +37,7 @@ Let's quote the Rust Book Section 3.2, "Invalid Array Element Access" : https://
 > }
 > ```
 > 
-> This code compiles successfully. If you run this code using cargo run and enter 0, 1, 2, 3, or 4, the program will print out the corresponding value at that index in the array. If you instead enter a number past the end of the array, such as 10, you’ll see output like this:
+> This code compiles successfully. If you run this code using `cargo run` and enter `0`, `1`, `2`, `3`, or `4`, the program will print out the corresponding value at that index in the array. If you instead enter a number past the end of the array, such as `10`, you’ll see output like this:
 > 
 > ```
 > thread 'main' panicked at src/main.rs:19:19:

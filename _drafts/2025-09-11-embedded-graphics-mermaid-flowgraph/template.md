@@ -8,30 +8,21 @@ tag: rust
 # Legend
 
 ```mermaid
-graph LR
+graph TD;
     S1[[struct]]
     S2[[struct]]
     S3[[struct]]
-    S4[[struct]]
 
-    T1([trait:trait_function])
-    T2([trait])
-    T3([trait])
+    T1(["trait (trait function)"])
 
-    I1@{ shape: text, label: "abstract description" }
-    I2@{ shape: text, label: "abstract description (this looks better when not drawing the actual objects)" }
+    I1@{ shape: text, label: "abstract description (maybe several structs we don't want to list)" }
     I3@{ shape: text, label: "abstract description" }
 
-    subgraph is_implemented_by
-        T1 === S1 & I1
-    end
-
-    subgraph is_composed_of
-        S3 --o S4 & I2
-    end
-
-    subgraph uses
-        T2 -.-> S2 & T3 & I3
+    subgraph Legend[ ]
+        T1 -.->|uses| S1
+        T1 ===|is implemented by| S2
+        T1 ===|is implemented by| I1
+        S2 --o|is composed of| S3 & I3
     end
 ```
 

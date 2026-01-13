@@ -38,7 +38,7 @@ At first I thought computing this length would be very simple, so I tried using 
 | --- | --- | --- | --- | --- |
 | `0` | `1` | `1` | `1` | `1` |
 | `1` | `0` | `1` | <span style="color:red">`u32::MAX`</span> | <span style="color:red">`u32::MAX`</span> |
-| `i32::MIN` | `i32::MAX` | <span style="color:red">`1`</span> | <span style="color:red">`u32::MAX`</span> | <span style="color:red">`u32::MAX`</span> |
+| `i32::MIN` | `i32::MAX` | <span style="color:red">`1`</span> | `u32::MAX` | `u32::MAX` |
 | `i32::MAX` | `i32::MIN` | <span style="color:red">`1`</span> | <span style="color:red">`1`</span> | <span style="color:red">`1`</span> |
 
 (*) wrapping arithmetic is used here
@@ -47,7 +47,7 @@ The classic formula (below) to compute the length of a line infinite integers do
 
 ![equation]({{ "/static/2025-06-07-unsigned-distance-for-i32/equation.svg" | relative_url }})
 
-32-bit math can be counter-intuitive... Luckily Rust provides a lot of arithmetic functions, and using checked arithmetic does shed some light on the problem.
+32-bit math can be counter-intuitive... Luckily Rust provides a lot of arithmetic functions, and using checked arithmetic sheds some light on the problem.
 
 ## Using Checked Arithmetic
 
